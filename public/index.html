@@ -1,0 +1,117 @@
+<!doctype html>
+<html>
+<head lang='en'>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width'>
+	<title>rollup-starter-app</title>
+
+	<style>
+		.bg-wrapper{
+  position: relative;
+  cursor: pointer;
+}
+
+.image-wrap {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  // height: 100%;
+    width: 100%;
+}
+
+.title {
+    color: white;
+    position: absolute;
+    font-family: verdana;
+    font-weight: lighter;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 1px 1px 1px black;
+    font: italic 600 6.25vw / 1.2em 'Cormorant','Palatino',serif;
+    text-transform: uppercase;
+    letter-spacing: .38em;
+    margin: 0 0 .62em .38em;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.subtitle-wrap {
+    position: absolute;
+    top: 59%;
+    left: 50%;
+    color: white;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #ffecd2;
+    letter-spacing: .3em;
+    font: 400 10px / 1em 'Lato','Helvetica Neue',Helvetica,'Arial Black',arial,sans-serif;
+}
+
+
+
+.content {
+    color: #ffecd2;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+.title-treatment {
+    letter-spacing: .38em;
+    margin: 0 0 .62em .38em;
+    font: italic 600 6.25vw / 1.2em 'Cormorant',serif;
+    text-transform: uppercase;
+}
+
+#explore-copy {
+    letter-spacing: .3em;
+    font: 400 10px / 1em 'Lato','Helvetica Neue',Helvetica,'Arial Black',arial,sans-serif;
+}
+
+
+.square {
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    background: black;
+    border: 1px solid #ffffff6b;
+    opacity: 0.5;
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+
+.page-content {
+  min-height: 500px;
+      overflow-x: scroll;
+}
+
+
+.image-item {
+    position: absolute;
+    height: 312px;
+    width: 303px;
+    top: 25px;
+    left: 23px;
+}
+
+.fade-in {
+    pointer-events: none;
+    position: absolute;
+    top: 24px;
+    left: 22px;
+    height: 313px;
+    width: 304px;
+    background: #d8d8d8;
+    box-shadow: 1px 1px 5px white;
+}
+	</style>
+</head>
+<body>
+	<div id="entry" class="entry"></div>
+	<script src='bundle.js'></script>
+</body>
+</html>

@@ -1,8 +1,6 @@
 import sAL from "simple_animation_loop";
 import { Polaroid } from "./Polaroid";
 
-
-
 const getSrc = (indexes) => {
   const randIndex = Math.round(Math.random() * indexes.length - 1);
   var value = indexes.splice(randIndex, 1)
@@ -34,12 +32,9 @@ const createPolaroidPics = ({entry, loop}) =>{
 
 }
 
-export const createApp = () => {
+export const createPolaroidGallery = () => {
   const entry = document.getElementById("entry");
   const loop = new sAL();
   const options = {entry, loop}
   const  images = createPolaroidPics(options);
-  // createRecordPlayer(options)
 };
-
-export default createApp;

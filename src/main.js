@@ -1,5 +1,7 @@
-import update from './update.js';
+import { createPolaroidGallery } from './polaroids';
 
 setTimeout(function(){
-  update();
+  createPolaroidGallery();
 }, 1000) 
+
+

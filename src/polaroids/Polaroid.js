@@ -1,7 +1,7 @@
 import glfx from "glfx";
-import { elementBuilder } from "./elementBuilder";
-import { outCubic, inCubic, inExpo, outQuint } from "./Easings";
-import { transitionBuilder } from "./transitionBuilder";
+import { elementBuilder } from "../utils/elementBuilder";
+import { outCubic, inCubic, inExpo, outQuint } from "../utils/Easings";
+import { transitionBuilder } from "../utils/transitionBuilder";
 
 const checkVisibleY = (el) => {
   var rect = el.getBoundingClientRect();
